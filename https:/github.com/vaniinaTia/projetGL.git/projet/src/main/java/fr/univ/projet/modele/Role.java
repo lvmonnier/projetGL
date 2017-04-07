@@ -5,6 +5,8 @@ public class Role {
 	private String prenom;
 	private String intitule;
 	
+	public Role () { this("", "", ""); }
+	
 	public Role(String nom, String prenom, String intitule) {
 		super();
 		this.nom = nom;

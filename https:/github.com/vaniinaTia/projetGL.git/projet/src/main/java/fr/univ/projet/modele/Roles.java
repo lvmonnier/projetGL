@@ -3,19 +3,25 @@ package fr.univ.projet.modele;
 import java.util.*;
 
 public class Roles {
-	private ArrayList roles = new ArrayList<Role>();
+	private List<Role> roles;
 	
-	public Roles(ArrayList roles) {
+	public Roles () { this(new ArrayList<Role>()); }
+	
+	public Roles(List<Role> roles) {
 		super();
 		this.roles = roles;
 	}
 
-	public ArrayList getRoles() {
+	public List<Role> getRoles() {
 		return roles;
 	}
 
-	public void setRoles(ArrayList roles) {
+	public void setRoles(List<Role> roles) {
 		this.roles = roles;
+	}
+	
+	public void addRole (Role r) {
+		(this.roles).add(r);
 	}
 
 }

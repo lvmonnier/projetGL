@@ -1,30 +1,21 @@
 package fr.univ.projet.modele;
 
 public class Film {
-	private int id;
 	private String Titre;
 	private String Genre;
 	private String Pays;
 	private String resume;
 	private Roles roles;
 	
-	public Film(int id, String titre, String genre, String pays, String resume,
-			Roles roles) {
+	public Film () { this("", "", "", "", new Roles()); }
+	
+	public Film(String titre, String genre, String pays, String resume, Roles roles) {
 		super();
-		this.id = id;
 		Titre = titre;
 		Genre = genre;
 		Pays = pays;
 		this.resume = resume;
 		this.roles = roles;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getTitre() {
@@ -65,6 +56,10 @@ public class Film {
 
 	public void setRoles(Roles roles) {
 		this.roles = roles;
+	}
+	
+	public void addRoles (Roles rs) {
+		this.setRoles(rs);
 	}
 	
 	
