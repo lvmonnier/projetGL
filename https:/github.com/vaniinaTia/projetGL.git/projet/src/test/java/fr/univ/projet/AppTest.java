@@ -1,4 +1,4 @@
-package fr.univ.tp;
+package fr.univ.projet;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
