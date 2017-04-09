@@ -24,6 +24,14 @@ public class Films {
 		(this.films).add(f);
 	}
 	
+	public String toString() {
+		String so = "";
+		for (Iterator<Film> it = films.listIterator(); it.hasNext(); ){
+			so += it.next().toString();
+		}
+		return so;
+	}
+	
 	
 
 }

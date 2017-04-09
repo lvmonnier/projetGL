@@ -1,9 +1,9 @@
 package fr.univ.projet.modele;
 
 public class Film {
-	private String Titre;
-	private String Genre;
-	private String Pays;
+	private String titre;
+	private String genre;
+	private String pays;
 	private String resume;
 	private Roles roles;
 	
@@ -11,35 +11,35 @@ public class Film {
 	
 	public Film(String titre, String genre, String pays, String resume, Roles roles) {
 		super();
-		Titre = titre;
-		Genre = genre;
-		Pays = pays;
+		this.titre = titre;
+		this.genre = genre;
+		this.pays = pays;
 		this.resume = resume;
 		this.roles = roles;
 	}
 
 	public String getTitre() {
-		return Titre;
+		return titre;
 	}
 
 	public void setTitre(String titre) {
-		Titre = titre;
+		this.titre = titre;
 	}
 
 	public String getGenre() {
-		return Genre;
+		return genre;
 	}
 
 	public void setGenre(String genre) {
-		Genre = genre;
+		this.genre = genre;
 	}
 
 	public String getPays() {
-		return Pays;
+		return pays;
 	}
 
 	public void setPays(String pays) {
-		Pays = pays;
+		this.pays = pays;
 	}
 
 	public String getResume() {
@@ -62,6 +62,9 @@ public class Film {
 		this.setRoles(rs);
 	}
 	
+	public String toString() {
+		return "\"" + titre + "\" \nGenre: " + genre + "\tPays: " + pays + "\nRésumé: " + resume + "\n" + roles.toString() + "\n\n";
+	}
 	
 	
 

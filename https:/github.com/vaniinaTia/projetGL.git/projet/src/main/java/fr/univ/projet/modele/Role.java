@@ -32,5 +32,9 @@ public class Role {
 	public void setIntitule(String intitule) {
 		this.intitule = intitule;
 	}
+	
+	public String toString() {
+		return nom + " " + prenom + " AS " + intitule + "\t";
+	}
 
 }

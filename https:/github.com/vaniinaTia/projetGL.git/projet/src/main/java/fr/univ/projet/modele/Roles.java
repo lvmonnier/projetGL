@@ -23,5 +23,13 @@ public class Roles {
 	public void addRole (Role r) {
 		(this.roles).add(r);
 	}
+	
+	public String toString() {
+		String so = "";
+		for (Iterator<Role> it = roles.listIterator(); it.hasNext(); ){
+			so += it.next().toString();
+		}
+		return so;
+	}
 
 }
